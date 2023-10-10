@@ -1,6 +1,6 @@
 # hey there :wave: 
 
-These are my solutions to the [Frontend Mentor](https://www.frontendmentor.io) challenges. Each solution can be found under the "master" tab (in branches). Feel free to poke around!
+These are my solutions to the [Frontend Mentor](https://www.frontendmentor.io) challenges. Each solution can be found under the "main" tab (in branches) or on the list below. Feel free to poke around!
 
 ## List of the challenges:
 

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+body {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  max-width: 375px;
+}
+.card__hero {
+  color: hsl(241, 100%, 89%);
+  padding: 0 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  min-height: 350px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.result__heading {
+  margin: 30px 0;
+}
+.result__score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  min-width: 150px;
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+
+.result__text {
+  color: hsl(0, 0%, 100%);
+  font-size: 50px;
+  line-height: 18px;
+}
+
+.of {
+  font-size: 18px;
+  color: #897fff;
+}
+
+.result__tittle {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+
+.result__paragraph {
+  color: #b8baff;
+  margin-bottom: 45px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.summary__tittle-wrapper {
+  margin: 20px 0 20px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.summary__list {
+  margin: 0 20px 0 20px;
+  padding: 0;
+  list-style-type: none;
+}
+.summary__list--item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  background: hsla(145, 50%, 30%, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.svg {
+  justify-self: flex-start;
+}
+
+.category {
+  justify-self: flex-start;
+}/*# sourceMappingURL=main.css.map */

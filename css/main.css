@@ -74,12 +74,14 @@ p {
   align-items: center;
 }
 .summary__tittle-wrapper {
-  margin: 20px 0 20px 50px;
+  min-width: 90%;
+  margin: 20px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .summary__list {
+  min-width: 90%;
   margin: 0 20px 0 20px;
   padding: 0;
   list-style-type: none;
@@ -90,14 +92,13 @@ p {
   border-radius: 5px;
   background: hsla(145, 50%, 30%, 0.1);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20px repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   justify-content: center;
   align-content: center;
   align-items: center;
   justify-items: center;
+  gap: 10px;
 }
 
 .svg {
@@ -106,4 +107,44 @@ p {
 
 .category {
   justify-self: flex-start;
+}
+.category--score {
+  justify-self: end;
+  color: #a8a3ab;
+}
+.category--score--span {
+  color: hsl(224, 30%, 27%);
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background: #fff6f6;
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background: #fefbf3;
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background: #f4fafa;
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background: #f3f3fc;
+}
+
+.button {
+  outline: none;
+  border: none;
+  min-width: 90%;
+  padding: 20px;
+  border-radius: 30px;
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+.button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }/*# sourceMappingURL=main.css.map */

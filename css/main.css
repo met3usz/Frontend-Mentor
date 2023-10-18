@@ -3,10 +3,17 @@ body {
   text-align: center;
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 500;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 1440px) {
+  body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 p {
@@ -17,6 +24,23 @@ p {
 .card {
   background: hsl(0, 0%, 100%);
   max-width: 375px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+@media (min-width: 1440px) {
+  .card {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    box-shadow: 8px 0px 12px 0px rgb(235, 235, 235);
+    border-radius: 30px;
+  }
 }
 .card__hero {
   color: hsl(241, 100%, 89%);
@@ -29,6 +53,12 @@ p {
   min-height: 350px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+@media (min-width: 1440px) {
+  .card__hero {
+    border-radius: 30px;
+    max-width: 240px;
+  }
 }
 
 .result__heading {
@@ -70,8 +100,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-items: center;
   align-items: center;
+}
+@media (min-width: 1440px) {
+  .summary {
+    padding: 20px;
+    max-width: 350px;
+  }
 }
 .summary__tittle-wrapper {
   min-width: 90%;
@@ -85,6 +120,11 @@ p {
   margin: 0 20px 0 20px;
   padding: 0;
   list-style-type: none;
+}
+@media (min-width: 1440px) {
+  .summary__list {
+    min-width: 100%;
+  }
 }
 .summary__list--item {
   margin-bottom: 15px;
@@ -141,10 +181,12 @@ p {
   border: none;
   min-width: 90%;
   padding: 20px;
+  margin-top: 20px;
   border-radius: 30px;
   background: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
 }
 .button:hover {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

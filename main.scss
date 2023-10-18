@@ -29,10 +29,16 @@ body {
   text-align: center;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 500;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media (min-width: $Desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 p {
@@ -43,6 +49,25 @@ p {
 .card {
   background: $White;
   max-width: $Mobile;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  @media (min-width: $Desktop) {
+    max-width: $Desktop;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    -webkit-box-shadow: 8px 0px 12px 0px rgba(235, 235, 235, 1);
+    -moz-box-shadow: 8px 0px 12px 0px rgba(235, 235, 235, 1);
+    box-shadow: 8px 0px 12px 0px rgba(235, 235, 235, 1);
+    border-radius: 30px;
+  }
 
   &__hero {
     color: $LightLavender;
@@ -55,6 +80,10 @@ p {
     min-height: 350px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    @media (min-width: $Desktop) {
+      border-radius: 30px;
+      max-width: 240px;
+    }
   }
 }
 
@@ -100,8 +129,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-items: center;
   align-items: center;
+  @media (min-width: $Desktop) {
+    padding: 20px;
+    max-width: 350px;
+  }
 
   &__tittle-wrapper {
     min-width: 90%;
@@ -116,6 +148,10 @@ p {
     margin: 0 20px 0 20px;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: $Desktop) {
+      min-width: 100%;
+    }
 
     &--item {
       margin-bottom: 15px;
@@ -177,11 +213,13 @@ p {
   border: none;
   min-width: 90%;
   padding: 20px;
+  margin-top: 20px;
   border-radius: 30px;
   background: $DarkGrayBlue;
   color: $White;
 
   &:hover {
     background: linear-gradient($LightSlateBlue, $LightRoyalBlue);
+    cursor: pointer;
   }
 }
